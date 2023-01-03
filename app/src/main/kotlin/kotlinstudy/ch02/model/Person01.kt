@@ -1,6 +1,6 @@
-package kotlin.study.model
+package kotlinstudy.ch02.model
 
-class Person {
+class Person01 {
     data class Person(val name: String, val age: Int? = null)
 
     fun main(args: Array<String>) {
