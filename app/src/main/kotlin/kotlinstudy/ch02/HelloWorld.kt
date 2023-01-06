@@ -1,5 +1,11 @@
 package kotlinstudy
 
+import kotlinstudy.ch02.Color02.*
+import kotlinstudy.ch02.getMnemonic
+import kotlinstudy.ch02.getWarmth
+import kotlinstudy.ch02.mix
+import kotlinstudy.ch02.mixOptimized
+
 fun main(args: Array<String>) {
     println("Hello, world!")
 
@@ -12,6 +18,20 @@ fun main(args: Array<String>) {
     println("${name}님 반가워요!")
 
     println("Hello, ${if (args.isNotEmpty()) args[0] else "Kotlin"}")//중괄호 안에 쌍따옴표를 쓸 수있음
+
+    println(getMnemonic(BLUE))
+    println(getMnemonic(VIOLET))
+
+    println(getWarmth(RED))
+
+    println(mix(RED, YELLOW))
+    println(mix(YELLOW, RED))
+
+    println(mixOptimized(RED, YELLOW))
+    println(mixOptimized(YELLOW, RED))
+//    println(mix(RED, BLUE)) 예외 발생
+
+
 }
 
 fun max(a: Int, b: Int): Int {
