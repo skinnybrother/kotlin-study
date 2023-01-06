@@ -35,3 +35,16 @@ fun mixOptimized(c1: Color02, c2: Color02) = when {
 
     else -> throw Exception("Dirty Color")
 }
+
+fun main(){
+    println(getMnemonic(BLUE))
+    println(getMnemonic(VIOLET))
+
+    println(getWarmth(RED))
+
+    println(mix(RED, YELLOW))
+    println(mix(YELLOW, RED))
+
+    println(mixOptimized(RED, YELLOW))
+    println(mixOptimized(YELLOW, RED))
+}
